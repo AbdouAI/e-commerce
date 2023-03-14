@@ -83,16 +83,13 @@ header img[src*=logo]{
     visibility: hidden;
 }
 .curtain{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    position: fixed;
+    inset: 0;
     z-index: 20;
-    height: 145%;
     background-color: rgba(11, 11, 11, 0.7);
 }
 .menu-box{
-    position: absolute;
+    position: fixed;
     z-index: 20;
     left: -100%;
     top:0;
@@ -451,12 +448,9 @@ img[src*=delete]{
 
     
     .product-modal{
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
+        position: fixed;
+        inset: 0;
         z-index: 10;
-        height: 148.5%;
         background-color: rgba(11, 11, 11, 0.7); 
         display: flex;
         justify-content: center;
@@ -465,7 +459,7 @@ img[src*=delete]{
   
     .inner-modal{
         width: 75%;
-        height: fit-content;
+        height: 80%;
         display: flex;
         max-width: 37rem;
         height: fit-content;
@@ -486,12 +480,13 @@ img[src*=delete]{
         fill: hsl(26, 100%, 55%);
     }
     .main-img-m{
-        height: 34rem;
+        height: 28rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 2.5rem;
         cursor: default;
+        background-position-y: -2rem;
     }
     .arrows{
         padding: .6rem;
@@ -548,8 +543,8 @@ img[src*=delete]{
     .menu-box{
         position: static;
         height: 100%;
-        width: 50%;
-        max-width: 30rem;
+        width: 45%;
+        max-width: 25rem;
         margin-left: 3rem;
         z-index: 0;
 
@@ -566,7 +561,6 @@ img[src*=delete]{
         display: none;
     }
     .menu-box li{
-        height: 98%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -574,7 +568,7 @@ img[src*=delete]{
     .underline{
         display: block;
         position: relative;
-        top: 3.3rem;
+        top: 3.35rem;
         width: 0;
         height: 4px;
         background-color: hsl(26, 100%, 55%);
@@ -614,7 +608,9 @@ img[src*=delete]{
         margin: 0;
     }
 
-
+    .inner-modal{
+        width: 60%;
+    }
     .img-selection{
         width: 100%;
         height: fit-content;
