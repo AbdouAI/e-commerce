@@ -1,3 +1,4 @@
+
 const menu=document.getElementById("menu")
 const closeMenu=document.getElementById("closeMenu")
 const menuBox=document.getElementById("menuBox")
@@ -11,10 +12,12 @@ menu.addEventListener("click",()=>{
     menuBox.style.left="0"
 })
 
+
 closeMenu.addEventListener("click",()=>{
     curtain.classList.add("no-display")
     menuBox.style.left="-100%"
 })
+
 
 for(link of menuLinks){
     link.addEventListener("click",()=>{
